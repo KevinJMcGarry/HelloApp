@@ -1,13 +1,16 @@
 {
   "name": "hello.world",
   "version": "1.0.2",
-  "description": "Do things right",
-  "homepage": "https://hello.world",
-  "repository": "github:hellodotworld/hello.git",
-  "main": "hello.js",
-  "bin": {
-    "hello": "./hello.js"
+  "description" : "Do things right",
+  "author" : "Hello.World",
+  "license" : "MIT",
+  "scripts": {
+    "start": "node hello.js"
   },
-  "author": "Hello.World",
-  "license": "MIT"
+  "engines": {
+    "node": "^4.6.1"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
