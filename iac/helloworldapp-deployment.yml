@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world-app
+spec:
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: hello-world-app
+    spec:
+      containers:
+        - name: hello-world-app
+          image: eurekasoftware/helloworldapp:v1
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+      - name: docker-registry-login
