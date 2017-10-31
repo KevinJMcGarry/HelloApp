@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Modern software projects start here.');
+  res.send('Modern software projects start here - YELLOW Deployment.');
 });
 
 var server = app.listen(3000, function () {
